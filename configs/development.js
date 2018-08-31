@@ -41,12 +41,13 @@ module.exports = {
     },
 
     resolve: {
+        modules: ['node_modules/@spryker/shop-ui-builder/node_modules', 'node_modules'],
         extensions: ['.ts', '.js', '.json', '.css', '.scss'],
         alias: alias.getFromTsConfig()
     },
 
     resolveLoader: {
-        modules: ['node_modules/@spryker/shopui-builder/node_modules', 'node_modules'],
+        modules: ['node_modules/@spryker/shop-ui-builder/node_modules', 'node_modules'],
     },
 
     module: {
